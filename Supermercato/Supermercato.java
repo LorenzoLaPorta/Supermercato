@@ -19,7 +19,10 @@ public class Supermercato{
 		aggiunge un prodotto alla lista
 	*/
 	public static boolean aggiungiProdotto(){
-		
+		String nome = Main.scannerString("Inserisci il nome del prodotto da aggiungere");
+		int quantita = Main.scannerInt("Inserisci la quantita' del prodotto da aggiungere");
+		double prezzo = Main.scannerDouble("Inserisci il prezzo del prodotto da aggiungere");
+		Prodotto prodotto = new Prodotto(nome, quantita, prezzo);
 	}
 	
 	/*
