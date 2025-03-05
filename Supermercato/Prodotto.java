@@ -10,4 +10,9 @@ public class Prodotto{
 		this.quantita = quantita;
 		this.prezzo = prezzo;
 	}
+	
+	@Override
+	public String toString(){
+		return this.nome + " (" + this.quantita + "), prezzo:" + this.prezzo;
+	}
 }

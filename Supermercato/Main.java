@@ -56,13 +56,15 @@ public class Main{
 		String menu = "SCEGLI UNA DELLE SEGUENTI OPZIONI \n";
 		menu += "0) esci \n";
 		menu += "1) aggiungi prodotto nel supermercato \n";
-		menu += "2) rimuovi prodotto nel supermercato \n";
-		menu += "3) visualizza prodotti nel supermercato \n";
-		menu += "4) aggiungi prodotto al carrello \n";
-		menu += "5) rimuovi prodotto dal carrello \n";
-		menu += "6) visualizza prodotti \n";
-		menu += "7) visualizza scontrino \n";
-		menu += "8) stampa scontrino \n";
+		menu += "2) modifica quantita' di un prodotto \n";
+		menu += "3) modifica prezzo di un prodotto \n";
+		menu += "4) rimuovi prodotto nel supermercato \n";
+		menu += "5) visualizza prodotti nel supermercato \n";
+		menu += "6) aggiungi prodotto al carrello \n";
+		menu += "7) rimuovi prodotto dal carrello \n";
+		menu += "8) visualizza prodotti \n";
+		menu += "9) visualizza scontrino \n";
+		menu += "10) stampa scontrino \n";
 		return menu;
 	}
 	
@@ -71,7 +73,7 @@ public class Main{
 		//IMPORTA IL FILE PRODOTTI
 		
 		do{
-			menu();
+			System.out.println(menu());
 			inserimento = scannerString("");
 			
 			switch (inserimento){
